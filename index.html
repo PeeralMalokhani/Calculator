@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .contaner{
+        margin: auto;
+    }
+    h1{
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .calc{
+        height: 370px;
+        background: greenyellow;
+        padding: 10px;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    #answer{
+        background: #bccd95;
+        width: 370px;
+        height: 80px;
+        color: #000;
+        border-radius: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        letter-spacing: 1px;
+
+    }
+    input{
+        font-size: 30px;
+        width: 65px;
+        height: 55px;
+        color: #fff;
+        background: #6f6f6f;
+        border-radius: 10px;
+        margin: 5px;
+        outline: none;
+        border: 0px solid;
+    }
+    input[type="button"]:hover{
+        cursor: pointer;
+        background: #fff;
+        color: #000;
+    }
+    .btn-red{
+        background: red;
+
+}
+.btn-blue{background-color: rgb(33, 189, 27);
+
+}
+h1 span{
+    color: rgb(2, 2, 2 / 50%);
+}
+</style>
+<body>
+    <div class="contaner" align="center">
+        <h1>
+            <span>C</span>
+            <span>A</span>
+            <span>L</span>
+            <span>C</span>
+            <span>U</span>
+            <span>L</span>
+            <span>A</span>
+            <span>T</span>
+            <span>O</span>
+            <span>R</span>
+        </h1>
+        <form name="forms">
+            <div class="calc">
+                <input type="text" id="answer" name="screen"><br>
+                <input type="button" value="7" onclick="Forms.screen.value='7'">
+                <input type="button" value="8" onclick="Forms.screen.value='8'">
+                <input type="button" value="9" onclick="Forms.screen.value='9'">
+                <input type="button" value="/" onclick="Forms.screen.value='/'">
+                <input type="button" class="btn-red" value="AC" onclick="Forms.screen.value='AC'"><br>
+                
+                
+                <input type="button" value="4" onclick="Forms.screen.value='4'">
+                <input type="button" value="5" onclick="Forms.screen.value='5'">
+                <input type="button" value="6" onclick="Forms.screen.value='6'">
+                <input type="button" value="." onclick="Forms.screen.value='*'">
+                <input type="button" value="%" onclick="Forms.screen.value='%'"><br>
+                
+                <input type="button" value="1" onclick="Forms.screen.value='1'">
+                <input type="button" value="2" onclick="Forms.screen.value='2'">
+                <input type="button" value="3" onclick="Forms.screen.value='3'">
+                <input type="button" value="+" onclick="Forms.screen.value='+'">
+                <input type="button" value="-" onclick="Forms.screen.value='-'"><br>
+                
+                <input type="button" value="0" onclick="Forms.screen.value='0'">
+                <input type="button" value="00" onclick="Forms.screen.value='00'">
+                <input type="button" value="000" onclick="Forms.screen.value='000'">
+                <input type="button" value="." onclick="Forms.screen.value='.'">
+                <input type="button" class="btn-blue" value="=" onclick="Forms.screen.value='='">
+            </div>
+        </form>
+
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
